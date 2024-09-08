@@ -7,3 +7,5 @@ FBBASE.FDB
 /src/ipricese.exe
 /src/ipricese.xml
 /src/backup
+/src/*.lps
+/src/*.res
