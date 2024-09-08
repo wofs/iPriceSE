@@ -22,7 +22,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FmMainU"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="62" Y="1254"/>
+        <CursorPos Y="1386"/>
         <ExtraEditorCount Value="1"/>
         <ExtraEditor1>
           <EditorIndex Value="-1"/>
@@ -97,7 +97,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pkgPricesU"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="431"/>
         <CursorPos X="40" Y="480"/>
         <ExtraEditorCount Value="1"/>
@@ -211,7 +211,7 @@
         <Filename Value="wformatsgridu.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="wFormatsGridU"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="2550"/>
         <CursorPos X="107" Y="2581"/>
         <ExtraEditorCount Value="1"/>
@@ -469,7 +469,7 @@
         <Filename Value="mpricelists.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="mPriceLists"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="494"/>
         <CursorPos X="85" Y="519"/>
         <ExtraEditorCount Value="1"/>
@@ -1040,11 +1040,10 @@
       </Unit90>
       <Unit91>
         <Filename Value="..\..\Programs\lazarus-ccr\ibx\runtime\IB.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="375"/>
         <CursorPos Y="408"/>
         <UsageCount Value="14"/>
-        <Loaded Value="True"/>
       </Unit91>
       <Unit92>
         <Filename Value="..\..\Programs\lazarus-ccr\ibx\runtime\IBSQL.pas"/>
@@ -1063,7 +1062,7 @@
       </Unit93>
       <Unit94>
         <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\rtl-objpas\src\inc\dateutil.inc"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="183"/>
         <CursorPos X="10" Y="302"/>
         <UsageCount Value="11"/>
@@ -1073,123 +1072,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="pkgpricesu.pas"/>
-        <Caret Line="1025" Column="24" TopLine="975"/>
+        <Caret Line="1026" Column="28" TopLine="976"/>
       </Position1>
       <Position2>
         <Filename Value="pkgpricesu.pas"/>
-        <Caret Line="1026" Column="28" TopLine="976"/>
+        <Caret Line="1248" Column="42" TopLine="1199"/>
       </Position2>
       <Position3>
         <Filename Value="pkgpricesu.pas"/>
-        <Caret Line="1248" Column="42" TopLine="1199"/>
+        <Caret Line="110" Column="30" TopLine="82"/>
       </Position3>
       <Position4>
         <Filename Value="pkgpricesu.pas"/>
-        <Caret Line="110" Column="30" TopLine="82"/>
+        <Caret Line="480" Column="40" TopLine="431"/>
       </Position4>
       <Position5>
-        <Filename Value="pkgpricesu.pas"/>
-        <Caret Line="480" Column="40" TopLine="431"/>
+        <Filename Value="mpricelists.pas"/>
+        <Caret Line="362" Column="38" TopLine="324"/>
       </Position5>
       <Position6>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="362" Column="38" TopLine="324"/>
+        <Caret Line="324" Column="79" TopLine="295"/>
       </Position6>
       <Position7>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="324" Column="79" TopLine="295"/>
+        <Caret Line="511" Column="42" TopLine="458"/>
       </Position7>
       <Position8>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="511" Column="42" TopLine="458"/>
+        <Caret Line="328" Column="97" TopLine="290"/>
       </Position8>
       <Position9>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="328" Column="97" TopLine="290"/>
+        <Caret Line="264" Column="58" TopLine="240"/>
       </Position9>
       <Position10>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="264" Column="58" TopLine="240"/>
+        <Caret Line="570" Column="54" TopLine="515"/>
       </Position10>
       <Position11>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="570" Column="54" TopLine="515"/>
+        <Caret Line="330" TopLine="301"/>
       </Position11>
       <Position12>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="330" TopLine="301"/>
+        <Caret Line="331" Column="34" TopLine="302"/>
       </Position12>
       <Position13>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="331" Column="34" TopLine="302"/>
+        <Caret Line="330" TopLine="302"/>
       </Position13>
       <Position14>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="330" TopLine="302"/>
+        <Caret Line="331" TopLine="302"/>
       </Position14>
       <Position15>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="331" TopLine="302"/>
+        <Caret Line="332" Column="3" TopLine="302"/>
       </Position15>
       <Position16>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" Column="3" TopLine="302"/>
+        <Caret Line="330" TopLine="302"/>
       </Position16>
       <Position17>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="330" TopLine="302"/>
+        <Caret Line="331" TopLine="302"/>
       </Position17>
       <Position18>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="331" TopLine="302"/>
+        <Caret Line="332" TopLine="302"/>
       </Position18>
       <Position19>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" TopLine="302"/>
+        <Caret Line="333" TopLine="302"/>
       </Position19>
       <Position20>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="333" TopLine="302"/>
+        <Caret Line="330" TopLine="302"/>
       </Position20>
       <Position21>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="330" TopLine="302"/>
+        <Caret Line="331" TopLine="302"/>
       </Position21>
       <Position22>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="331" TopLine="302"/>
+        <Caret Line="332" TopLine="302"/>
       </Position22>
       <Position23>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" TopLine="302"/>
+        <Caret Line="330" Column="14" TopLine="302"/>
       </Position23>
       <Position24>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="330" Column="14" TopLine="302"/>
+        <Caret Line="332" Column="71" TopLine="302"/>
       </Position24>
       <Position25>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" Column="71" TopLine="302"/>
+        <Caret Line="333" TopLine="302"/>
       </Position25>
       <Position26>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="333" TopLine="302"/>
+        <Caret Line="332" Column="50" TopLine="302"/>
       </Position26>
       <Position27>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" Column="50" TopLine="302"/>
+        <Caret Line="331" Column="64" TopLine="302"/>
       </Position27>
       <Position28>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="331" Column="64" TopLine="302"/>
+        <Caret Line="274" Column="35" TopLine="256"/>
       </Position28>
       <Position29>
         <Filename Value="mpricelists.pas"/>
-        <Caret Line="274" Column="35" TopLine="256"/>
+        <Caret Line="332" Column="28" TopLine="303"/>
       </Position29>
       <Position30>
-        <Filename Value="mpricelists.pas"/>
-        <Caret Line="332" Column="28" TopLine="303"/>
+        <Filename Value="fmmainu.pas"/>
+        <Caret Line="194" Column="49" TopLine="168"/>
       </Position30>
     </JumpHistory>
     <RunParams>

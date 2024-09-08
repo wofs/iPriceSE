@@ -1,1 +1,9 @@
 FBBASE.FDB
+/src/lib
+/src/tmp
+/src/export
+/src/logs
+/src/iPrice.search
+/src/ipricese.exe
+/src/ipricese.xml
+/src/backup
