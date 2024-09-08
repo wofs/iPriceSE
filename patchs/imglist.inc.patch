@@ -1,0 +1,12 @@
+Index: lcl/include/imglist.inc
+===================================================================
+--- lcl/include/imglist.inc	(revision 61016)
++++ lcl/include/imglist.inc	(working copy)
+@@ -1846,6 +1846,7 @@
+ function TCustomImageList.GetResolutionForPPI(AImageWidth, APPI: Integer;
+   const ACanvasScaleFactor: Double): TScaledImageListResolution;
+ begin
++  if not Assigned(self) then exit;
+   if Scaled then
+     Result := TScaledImageListResolution.Create(
+       GetResolution(GetWidthForPPI(AImageWidth, Round(APPI*ACanvasScaleFactor))),

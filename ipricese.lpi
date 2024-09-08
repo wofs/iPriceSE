@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="iPriceSE"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <RevisionNr Value="6"/>
+      <BuildNr Value="4"/>
+      <Language Value="0419"/>
+      <Attributes pvaPreRelease="True"/>
+      <StringTable Comments="Утилита работы с прайс-листами." CompanyName="Degtyarev A. A." InternalName="iPriceSE" LegalCopyright="Degtyarev A. A." LegalTrademarks="iPriceSE" ProductName="iPriceSE" ProductVersion="dev"/>
+    </VersionInfo>
+    <BuildModes Count="4">
+      <Item1 Name="x64_Debug" Default="True"/>
+      <Item2 Name="x64_Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="ipricese"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseValgrind Value="True"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="x32_Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="ipricese"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseValgrind Value="True"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="x32_Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="ipricese"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseHeaptrc Value="True"/>
+              <StripSymbols Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item4>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="2">
+        <Mode0 Name="default">
+          <local>
+            <HostApplicationFilename Value="C:\Z\Projects\lazarus\ipricese\ipricese.exe"/>
+            <CommandLineParams Value="-settings=&quot;dbconfig_local.ini&quot; -exportcatalogxls &quot;D:\tmp\export.xls&quot; 1,3 1"/>
+          </local>
+        </Mode0>
+        <Mode1 Name="Prodaction"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="12">
+      <Item1>
+        <PackageName Value="laz_fpspreadsheetexport_visual"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="DBFLaz"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="lazdbexport"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="IDEIntf"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LazControls"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="ibexpress"/>
+      </Item8>
+      <Item9>
+        <PackageName Value="SQLDBLaz"/>
+      </Item9>
+      <Item10>
+        <PackageName Value="FCL"/>
+      </Item10>
+      <Item11>
+        <PackageName Value="laz_fpspreadsheet_visual"/>
+      </Item11>
+      <Item12>
+        <PackageName Value="LCL"/>
+      </Item12>
+    </RequiredPackages>
+    <Units Count="51">
+      <Unit0>
+        <Filename Value="ipricese.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="fmmainu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmMainU"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="fmmasteru.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmMaster"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="wplugin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wPlugin"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="wlogu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wLogU"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="pkgcatalogu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmCatalog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgCatalogU"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="pkgpricesu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmPrices"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgPricesU"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="pkgformatsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmFormats"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgFormatsU"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="fmnomenclatureeditu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmNomenclatureEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmNomenclatureEditU"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="wfuncu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wFuncU"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="fmtreeu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmTree"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmTreeU"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="wtabu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wTabU"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="fmpricefieldsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmPriceFields"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmPriceFieldsU"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="fmnomenclatureeditmassu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmNomenclatureEditMass"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmNomenclatureEditMassU"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="wformatsgridu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wFormatsGridU"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="wdbimportu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wDBImportU"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="fmaboutu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmAboutU"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="fmlistselectu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmListSelect"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmListSelectU"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="fmquantityinpackingu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmQuantityInPacking"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmQuantityInPackingU"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="pkgutilsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmUtils"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgUtilsU"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="fmmatchingeditu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmMatchingEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmMatchingEditU"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="fmwaitu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmWaitU"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="fmmatchingaddu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmMatchingAdd"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmMatchingAddU"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="fmarcviewu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmArcView"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmArcViewU"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="wzipperu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wZipperU"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="wymlparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wYMLparser"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="win1251decoder.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="fmurlsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmURLs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmURLsU"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="mcatalogu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mCatalogU"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="wbaseu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wBaseU"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="wdbgridu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wDBGridU"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="wformulau.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wFormulaU"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="wdbtreeu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wDBTreeU"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="mpricelists.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mPriceLists"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="pkganalisisu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmAnalisis"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgAnalisisU"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="manalisisu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mAnalisisU"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="wgetu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wGetU"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="fmformatsimportu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmFormatsImport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmFormatsImportU"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="utilsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UtilsU"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="pkgordersu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmOrders"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pkgOrdersU"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="mordersu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mOrdersU"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="mutilsu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtilsU"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="wtprogressu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wTProgressU"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="wcustomclassthreadu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wCustomClassThreadU"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="wtypesu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wTypesU"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="fmreportu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmReport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmReportU"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="wtviewerspreadsheetu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wTViewerSpreadsheetU"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="minvoceu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mInvoceU"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="fminvoceu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmInvoce"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmInvoceU"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="wreportu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="wReportU"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="fmcatalogexportu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FmCatalogExport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FmCatalogExportU"/>
+      </Unit50>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="ipricese"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+      <TargetCPU Value="x86_64"/>
+      <TargetOS Value="win64"/>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <UseHeaptrc Value="True"/>
+        <TrashVariables Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>

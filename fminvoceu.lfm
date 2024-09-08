@@ -1,0 +1,409 @@
+object FmInvoce: TFmInvoce
+  Left = 523
+  Height = 459
+  Top = 163
+  Width = 466
+  Caption = 'FmInvoce'
+  ClientHeight = 459
+  ClientWidth = 466
+  Icon.Data = {
+    7E04000000000100010010100000010020006804000016000000280000001000
+    0000200000000100200000000000000400006400000064000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000001E0000003300000033000000330000001E0000
+    00008C898700908D8B000000001A00000033000000330000001A908D8B008E88
+    88009A858A000000001D008D54AC009E5EFF009D5DFF009E5EFF008C55AC0000
+    001E8B888600000000334542439A514F4FFF514F4FFF44424399000000330000
+    003300000033008C51A600A669FF00BA86FF77DFC4FF00BA86FF00A66AFF008C
+    55AC868381008A8785FF5D5B5AFF8A8887FF8A8887FF5D5B5AFF8A8785FF8983
+    82FF968185FF009F59FF00C08BFF00BB82FFFFFFFFFF00BB82FF00C08CFF009E
+    5EFFC4C2C000C9C7C5FF6C6968FFCCCAC9FFCCCAC9FF6D6968FFC9C8C5FFC8C3
+    C2FFD6C2C7FF009B55FF74E5CBFFFFFFFFFFFFFFFFFFFFFFFFFF77E5CCFF009C
+    5CFFC0BEBC00C5C3C1007C79777F817E7DFF817E7DFF7D7A787CC8C6C400C7C2
+    C100D5C2C500009B55FF00CC96FF00C88FFFFFFFFFFF00C88FFF00CC98FF009D
+    5DFFC0BEBC00C5C4C20000000022000000330000003300000033000000330000
+    0033000000330084479900AE6EFF00D39CFF74EDD3FF00D39DFF00AE72FF009F
+    6097BEBCBA000000002172706EBA9B9896FF919292FF909191FF8F9090FF8F8F
+    8FFF948F91FF9F8D94FF379470FF009851FF009851FF009B57FF009F5E9000A1
+    6100000000228B8987B9A8A7A5FFF0EFEEFFB7B6B5FFEDECEBFFB6B5B3FFEDEC
+    EBFFB7B4B4FFF1EBECFFBFB3B6FFFAE9EEFFEFDCE2FFAE9298FF00A15A0000A2
+    5D00ADAAA8BDB9B7B4FFEAE9E8FFB0B1B0FFE2E1E0FFADACABFFE2E1E0FFADAC
+    ABFFE2E1E0FFADACABFFE3E1E0FFAEABABFFE3DFDEFF9C9292FFA7969900AC97
+    9B00A19D9BFFE7E6E4FFADACABFFDCDAD8FFA8A6A5FFDCDAD8FFA8A6A5FFDCDA
+    D8FFA8A6A5FFDCDAD8FFA8A6A5FFDBD9D7FFE2E1E0FF969290FFA0989400A69A
+    9400A4A2A0FFF3F3F2FFD1CFCDFF9F9E9CFFD4D1CFFF9F9F9CFFD4D1CFFF9F9F
+    9CFFD4D1CFFF9F9F9CFFD3D1CFFF9E9E9BFFE6E3E2FF99928EFFA79A90002476
+    C000AAA6A4FFFAF9F8FFF7F7F6FFF8F7F6FFF8F7F6FFF8F7F7FFF8F7F6FFF8F7
+    F7FFF8F7F6FFF8F7F6FFF7F6F6FFF7F6F5FFE9E6E3FF9F938AFF000000330000
+    0033AEACAAB0ADABA8FFABA9A7FFABA9A7FFABA9A7FFABA9A7FFABA9A7FFABA9
+    A7FFABA9A7FFABA9A7FFA9A7A5FFD4D2D1FFF3EDE8FF4685B7FF327BBAFF3179
+    B9FFB0AEAC00B0AEAC00B0AEAC00B0AEAC00B0AEAC00B0AEAC00B0AEAC00B0AE
+    AC00B0AEAC00AFADAB00AEACAA00BEBBB8FFE7DED8FF2E7ABBFF71E2FFFF3177
+    B8FFB0AEAC00B1AFAD00B1AFAD00B1AFAD00B1AFAD00B1AFAD00B1AFAD00B1AF
+    AD00B1AFAD00B1AFAD00AFADAB00C1BEBA00C9C0B8FF3D83BDFF357BBAFF327A
+    B8EF000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 459
+    Top = 0
+    Width = 466
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 459
+    ClientWidth = 466
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 0
+      Height = 34
+      Top = 425
+      Width = 466
+      Align = alBottom
+      ClientHeight = 34
+      ClientWidth = 466
+      TabOrder = 1
+      object btnCancel: TBitBtn
+        AnchorSideTop.Control = Panel2
+        AnchorSideTop.Side = asrCenter
+        Left = 355
+        Height = 31
+        Top = 2
+        Width = 100
+        Anchors = [akTop, akRight]
+        Cancel = True
+        Caption = 'Отмена'
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000595D5B85686B
+          69FF545856FF555957FF565A58FF565A58FF565A58FF565A58FF575B59FF575B
+          59FF575B59FF575B59FF575B59FF565A58FF5D615F86FFFFFF01535755FFC3C3
+          C3FF979898FF909392FFBBC1BEFFC1C6C3FFC3C8C6FFC3C9C6FFC4C9C6FFC4C9
+          C6FFC4C9C6FFC4C9C6FFC4C9C6FFC1C7C5FF5F6361FFFFFFFF05535755FFBEBE
+          BEFFABABABFFAFAFAFFF858685FF8B8F8DFFC5C9C7FFD2D6D4FFD5D9D7FFD6DA
+          D8FFD7DBD9FF8688C5FF4345B6FFD4D8D6FF717573FFFFFFFF0F535755FFBEBE
+          BEFFAAAAAAFFA9A9A9FFA1A1A1FF999999FF6F6F6FFF888A89FFD0D2D0FFE3E5
+          E4FF6B6CC4FF1111ACFF0C0CA9FFE4E6E5FF868887FFFFFFFF19535755FFBEBE
+          BEFFAAAAAAFFA5A5A5FF9D9D9DFF959595FF8F8F8FFF828282FF5E5F64FF4849
+          BBFF1B1BB5FF3535D3FF0404A6FF1E1EB0FF1314A5FF0B0BAAC8535755FFBEBE
+          BEFFAAAAAAFFA3A3A3FF9A9A9AFF929292FF898989FF797986FF2425ACFF2424
+          BCFF3838D6FF4141D9FF3A3AD4FF3C3CD2FF3D3DD2FF0000A5FD535755FFBEBE
+          BEFFA9A9A9FFA1A1A1FF989898FF8F8F8FFF73738BFF0E0EA2FF2D2DC4FF3636
+          D7FF0808CEFF0C0CCEFF0C0CCEFF0E0ECFFF5151DCFF0101A5FC535755FFBEBE
+          BEFFA7A7A7FF9E9E9EFF969696FF8D8D8DFF1616A1FF3636C5FF5656DDFF2D2D
+          D5FF2525D3FF1A1AD1FF1010CFFF1B1BD2FF6E6EE2FF0404A6FC535755FFBEBE
+          BEFFA4A4A4FF9C9C9CFF939393FF8B8B8BFF64648AFF1111A6FF5E5ED5FF6969
+          E1FF4848DBFF4A4ADBFF4C4CDBFF4D4DDBFF8D8DE8FF0303A6FC535755FFBEBE
+          BEFFA2A2A2FF9A9A9AFF919191FF888888FF808080FF6A6A7EFF2121B0FF6565
+          D2FF8888E7FF8E8EE8FF9595EAFF9696EAFF9A9AEBFF0101A5FC535755FFBDBD
+          BDFFA0A0A0FF979797FF8F8F8FFF868686FF7E7E7EFF767676FFE1E3ECFF3C3C
+          B9FF6161CDFFA7A7ECFF3030BCFF2828B7FF2122B1FF0101A5F8535755FFBBBB
+          BBFF9D9D9DFF949494FF898989FF7F7F7FFF767676FF707070FFEEF0F0FFEFF1
+          F3FF6565C7FF5151C4FF1515ACFFD3D4EDFF8889A2FF9696DA3A535755FFBABA
+          BAFF959595FF898989FF7E7E7EFF757575FF6E6E6EFF686868FFEEEFEFFFF2F4
+          F4FFF9F9F9FF9292D7FF3E3EBCFFFAFAFAFFA1A3A2FFFFFFFF26535755FFADAD
+          ADFF8C8C8CFF7F7F7FFF757575FF6C6C6CFF646464FF606060FFEDEFEFFFF2F3
+          F3FFF7F8F8FFFAFBFBFFFBFBFBFFF9F9F9FF989B9AFFFFFFFF22535755FFA6A6
+          A6FF858585FF797979FF6E6E6EFF656565FF5D5D5DFF595959FFEDEFEFFFEFF1
+          F1FFF3F4F4FFF5F6F6FFF5F6F6FFECEEEDFF7D817FFFFFFFFF15595D5B855357
+          55FF535755FF535755FF535755FF535755FF535755FF535755FF545856FF5A5E
+          5CFF626564FF666968FF676A68FF636765FF6B6E6D8CFFFFFF04
+        }
+        ModalResult = 2
+        TabOrder = 1
+      end
+      object btnSave: TBitBtn
+        AnchorSideTop.Control = Panel2
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = btnCancel
+        Left = 245
+        Height = 31
+        Top = 2
+        Width = 100
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 10
+        Caption = 'ОК'
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000000000000000
+          0000D6D6D6002F2F2F0218181804101010060E0E0E070C0C0C090D0D0D090D0D
+          0D0810101006171717052D2D2D028989890000000000000000006E6E6E011B1B
+          1B090C0C0C130707071E050505270404043003000135000000310300023D0303
+          033903030332050505280606061F0B0B0B151818180A54545401000000000000
+          000000000000FFFFFF005D716601000000021B844A9257B882FF006428472618
+          2002363636025E5E5E01FFFFFF00000000000000000000000000000000000000
+          00000000000000000000047537364AB579F583EBB1FF7FE8ADFE46BB7AFF0061
+          2417098440000000000000000000000000000000000000000000000000000000
+          000000000000108B475C49C781FF57DB92FE52D88DFF50D88CFF59DC93FE1AA3
+          58E80000000010924A0000000000000000000000000000000000000000000000
+          0000068D424824BC68FF1CC567FE0CC25DFF08C15AFE08BF59FF0EC15DFF28C8
+          70FF099949B60000000000000000000000000000000000000000000000000000
+          00000AAA52FE09AF53FF0AA44FB808984A7D099D4C9209AA51F70AB757FF0AB7
+          57FF0BB557FF09994969000000000000000000000000000000000000000009A1
+          4D560AA850EC0B9A4B1A0000000000000000000000000000000009A24E890AAC
+          53FF0AAF53FE0AAA51FF0BA24E210BAA52000000000000000000000000000BAB
+          51480BAA530D0BA550000000000000000000000000009EDEBE00000000000BAA
+          513E0AA951FE0AA64FFE0AA951E2000000000000000000000000000000000000
+          000012AE57000000000000000000000000000000000000000000000000000000
+          00000EB95A1D09AA51F8089C4BFF0BB356820000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000B2480011C964150AA951F909A24DFF12D3661212CA6300000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000BC4F0010D7681E09A14DFE0BB858AC00000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000010DE6A370AB054FF14F7780D000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000DD365730EDB696C000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000FDB693C000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000000000070E6A70000000000
+        }
+        ModalResult = 1
+        TabOrder = 0
+      end
+    end
+    object pcInvoce: TPageControl
+      Left = 0
+      Height = 425
+      Top = 0
+      Width = 466
+      ActivePage = tsAddEdit
+      Align = alClient
+      ShowTabs = False
+      TabIndex = 0
+      TabOrder = 0
+      object tsAddEdit: TTabSheet
+        Caption = 'tsAddEdit'
+        ClientHeight = 417
+        ClientWidth = 458
+        object GroupBox1: TGroupBox
+          Left = 0
+          Height = 80
+          Top = 0
+          Width = 458
+          Align = alTop
+          Caption = 'Наименование'
+          ClientHeight = 62
+          ClientWidth = 454
+          TabOrder = 2
+          object edName: TMemo
+            Left = 0
+            Height = 62
+            Top = 0
+            Width = 454
+            Align = alClient
+            Color = clMoneyGreen
+            ReadOnly = True
+            TabOrder = 0
+            TabStop = False
+          end
+        end
+        object gbIdent: TGroupBox
+          Left = 0
+          Height = 72
+          Top = 192
+          Width = 458
+          Align = alTop
+          Caption = 'Идентификаторы'
+          ClientHeight = 54
+          ClientWidth = 454
+          TabOrder = 3
+          object edScod: TLabeledEdit
+            AnchorSideLeft.Control = edVendorCode
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbIdent
+            AnchorSideTop.Side = asrCenter
+            Left = 170
+            Height = 21
+            Top = 17
+            Width = 125
+            BorderSpacing.Left = 10
+            Color = clScrollBar
+            EditLabel.Height = 13
+            EditLabel.Width = 125
+            EditLabel.Caption = 'Штрих-код'
+            ReadOnly = True
+            TabOrder = 0
+            TabStop = False
+          end
+          object edLabel: TLabeledEdit
+            AnchorSideLeft.Control = edScod
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbIdent
+            AnchorSideTop.Side = asrCenter
+            Left = 305
+            Height = 21
+            Top = 17
+            Width = 144
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Left = 10
+            Color = clScrollBar
+            EditLabel.Height = 13
+            EditLabel.Width = 144
+            EditLabel.Caption = 'Артикул'
+            ReadOnly = True
+            TabOrder = 1
+            TabStop = False
+          end
+          object edVendorCode: TLabeledEdit
+            AnchorSideLeft.Control = edUnit
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbIdent
+            AnchorSideTop.Side = asrCenter
+            Left = 80
+            Height = 21
+            Top = 17
+            Width = 80
+            BorderSpacing.Left = 10
+            Color = clScrollBar
+            EditLabel.Height = 13
+            EditLabel.Width = 80
+            EditLabel.Caption = 'Код'
+            ReadOnly = True
+            TabOrder = 2
+            TabStop = False
+          end
+          object edUnit: TLabeledEdit
+            AnchorSideLeft.Control = gbIdent
+            AnchorSideTop.Control = gbIdent
+            AnchorSideTop.Side = asrCenter
+            Left = 10
+            Height = 21
+            Top = 17
+            Width = 60
+            BorderSpacing.Left = 10
+            Color = clScrollBar
+            EditLabel.Height = 13
+            EditLabel.Width = 60
+            EditLabel.Caption = 'Ед.'
+            ReadOnly = True
+            TabOrder = 3
+            TabStop = False
+          end
+        end
+        object gbVipiska: TGroupBox
+          Left = 0
+          Height = 65
+          Top = 127
+          Width = 458
+          Align = alTop
+          Caption = 'Выписка'
+          ClientHeight = 47
+          ClientWidth = 454
+          TabOrder = 0
+          object edPrice: TLabeledEdit
+            AnchorSideLeft.Control = gbVipiska
+            AnchorSideTop.Control = gbVipiska
+            AnchorSideTop.Side = asrCenter
+            Left = 10
+            Height = 21
+            Top = 13
+            Width = 140
+            BorderSpacing.Left = 10
+            Color = clMoneyGreen
+            EditLabel.Height = 13
+            EditLabel.Width = 140
+            EditLabel.Caption = 'Цена'
+            ReadOnly = True
+            TabOrder = 1
+            TabStop = False
+            Text = '0'
+            OnChange = edSumChange
+          end
+          object edSum: TLabeledEdit
+            AnchorSideLeft.Control = edQuantity
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbVipiska
+            AnchorSideTop.Side = asrCenter
+            Left = 310
+            Height = 21
+            Top = 13
+            Width = 140
+            BorderSpacing.Left = 10
+            Color = clMoneyGreen
+            EditLabel.Height = 13
+            EditLabel.Width = 140
+            EditLabel.Caption = 'Сумма'
+            ReadOnly = True
+            TabOrder = 2
+            TabStop = False
+            Text = '0'
+            OnChange = edSumChange
+          end
+          object edQuantity: TSpinEdit
+            AnchorSideLeft.Control = edPrice
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbVipiska
+            AnchorSideTop.Side = asrCenter
+            Left = 160
+            Height = 21
+            Top = 13
+            Width = 140
+            BorderSpacing.Left = 10
+            MaxValue = 999999999
+            OnChange = edQuantityChange
+            OnKeyPress = edQuantityKeyPress
+            TabOrder = 0
+          end
+          object Label1: TLabel
+            AnchorSideLeft.Control = edQuantity
+            AnchorSideBottom.Control = edQuantity
+            Left = 160
+            Height = 13
+            Top = -4
+            Width = 60
+            Caption = 'Количество'
+          end
+        end
+        object GroupBox2: TGroupBox
+          Left = 0
+          Height = 153
+          Top = 264
+          Width = 458
+          Align = alClient
+          Caption = 'Примечание'
+          ClientHeight = 135
+          ClientWidth = 454
+          TabOrder = 4
+          object edRemark: TMemo
+            Left = 0
+            Height = 135
+            Top = 0
+            Width = 454
+            Align = alClient
+            TabOrder = 0
+          end
+        end
+        object bgInvoced: TGroupBox
+          Left = 0
+          Height = 47
+          Top = 80
+          Width = 458
+          Align = alTop
+          Caption = 'Редактировать позицию:'
+          ClientHeight = 29
+          ClientWidth = 454
+          TabOrder = 1
+          object cbInvoced: TComboBox
+            Left = 0
+            Height = 21
+            Top = 0
+            Width = 454
+            Align = alTop
+            ItemHeight = 13
+            OnChange = cbInvocedChange
+            Style = csDropDownList
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

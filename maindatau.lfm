@@ -1,0 +1,7 @@
+object MainData: TMainData
+  OldCreateOrder = False
+  Height = 302
+  HorizontalOffset = 424
+  VerticalOffset = 185
+  Width = 282
+end

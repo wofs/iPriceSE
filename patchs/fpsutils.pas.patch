@@ -1,0 +1,16 @@
+Index: source/common/fpsutils.pas
+===================================================================
+--- source/common/fpsutils.pas	(revision 7963)
++++ source/common/fpsutils.pas	(working copy)
+@@ -3189,6 +3189,11 @@
+       s := copy(s, 1, p-1);
+     end else
+       ms := 0;
++
++    p:= Pos('+',s);
++    if p>0 then
++       s:= copy(s, 1, p-1);
++
+     Result := StrToDateTime(s, fs) + ms;
+   end else
+   begin

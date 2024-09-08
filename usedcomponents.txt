@@ -1,0 +1,26 @@
+Используемые нестандартные компоненты:
+1. IBExpress
+2. fpspreadsheet
+3. FPC rev 43341
+4. Lazarus rev 62148
+
+[Lazarus] [Мои исправления. Дата, код багреморта (если есть), ошибка. НЕАКТУАЛЬНО]
+//[wofs] 29.10.2017 #0032468 Изменил строки по данным багрепорта. Ошибка "Grid index out of range".
+
++++ lcl/dbgrids.pas	(working copy)
+@@ -2381,7 +2381,12 @@
+       end;
+       GridFlags := GridFlags + [gfEditingDone];
+       if (DeltaCol<>0) then
+-        Col := Col + DeltaCol;
++        if Col + DeltaCol < FixedCols then
++          Col := FixedCols
++        else if Col + DeltaCol >= ColCount then
++          Col := ColCount - 1
++        else
++          Col := Col + DeltaCol;
+       GridFlags := GridFlags - [gfEditingDone];
+     end else
+     if AReset then
+	 
+//End[wofs] 29.10.2017 #0032468 Изменил строки по данным багрепорта. Ошибка "Grid index out of range".	 
