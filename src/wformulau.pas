@@ -115,7 +115,7 @@ const
     ('D',  'D', 'PD'),
     ('C',  'C', 'PC'),
     ('K',  'K', 'PK'),
-    ('PDATEDIF',  'ROUND((CURRENT_TIMESTAMP-PDATE)*24)', '')
+    ('PDATEDIF',  'ROUND(CURRENT_TIMESTAMP-PDATE)', '')
     );
 
   VarToFunctions: array[0..14, 0..3] of string = (

@@ -20,7 +20,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <RevisionNr Value="6"/>
-      <BuildNr Value="6"/>
+      <BuildNr Value="7"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Утилита работы с прайс-листами." CompanyName="Degtyarev A. A." InternalName="iPriceSE" LegalCopyright="Degtyarev A. A." LegalTrademarks="iPriceSE" ProductName="iPriceSE" ProductVersion="dev"/>
@@ -140,12 +140,16 @@
       <Version Value="2"/>
     </PublishOptions>
     <RunParams>
+      <local>
+        <HostApplicationFilename Value="C:\MyFiles\git-repos\ipricese\src\ipricese.exe"/>
+        <CommandLineParams Value="-settings=&quot;..\..\ipricese_debug\dbconfig.ini&quot;"/>
+      </local>
       <FormatVersion Value="2"/>
       <Modes Count="2">
         <Mode0 Name="default">
           <local>
-            <HostApplicationFilename Value="C:\Z\Projects\lazarus\ipricese\ipricese.exe"/>
-            <CommandLineParams Value="-settings=&quot;dbconfig_local.ini&quot; -exportcatalogxls &quot;D:\tmp\export.xls&quot; 1,3 1"/>
+            <HostApplicationFilename Value="C:\MyFiles\git-repos\ipricese\src\ipricese.exe"/>
+            <CommandLineParams Value="-settings=&quot;..\..\ipricese_debug\dbconfig.ini&quot;"/>
           </local>
         </Mode0>
         <Mode1 Name="Prodaction"/>
