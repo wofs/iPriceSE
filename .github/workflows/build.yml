@@ -23,7 +23,7 @@ jobs:
 
     - name: Build project
       run: |
-        # Добавляем пути к FPC и Lazarus в переменную PATH
-        set PATH=%PATH%;C:\Program Files (x86)\FPC\3.2.0\bin\i386-win32
-        set PATH=%PATH%;C:\Program Files (x86)\Lazarus\bin
+        # Изменение переменной PATH для PowerShell
+        $env:PATH += ";C:\Program Files (x86)\FPC\3.2.0\bin\i386-win32"
+        $env:PATH += ";C:\Program Files (x86)\Lazarus\bin"
         lazbuild ipricese.lpi
