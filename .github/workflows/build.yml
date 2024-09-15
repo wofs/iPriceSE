@@ -18,10 +18,13 @@ jobs:
 
     - name: Set up Free Pascal Compiler and Lazarus
       run: |
-        choco install -y fpc
-        choco install -y lazarus
-
+        # Установка FPC и Lazarus через Chocolatey
+        choco install -y fpc --install-args="'/D=C:\Lazarus\fpc'"
+        choco install -y lazarus --install-args="'/D=C:\Lazarus'"
+    
     - name: Build project
       run: |
-        # Указываем полный путь до lazbuild
-        "C:\Program Files (x86)\Lazarus\lazbuild.exe" ipricese.lpi
+        # Устанавливаем правильные пути через переменную PATH и используем оператор & для PowerShell
+        $env:PATH += ";C:\Lazarus\fpc\3.2.0\bin\i386-win32"
+        $env:PATH += ";C:\Lazarus"
+        & "C:\Lazarus\lazbuild.exe" ipricese.lpi
