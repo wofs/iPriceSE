@@ -18,22 +18,34 @@ jobs:
 
     - name: Download and Install Free Pascal Compiler (FPC)
       run: |
-        # Загружаем и устанавливаем FPC вручную
-        Invoke-WebRequest -Uri https://sourceforge.net/projects/freepascal/files/Source/3.2.2/fpc-3.2.2.x86_64-win64.zip/download -OutFile fpc.zip
-        Expand-Archive fpc.zip -DestinationPath C:\Lazarus\fpc
-        # Добавляем FPC в PATH
-        $env:PATH += ";C:\Lazarus\fpc\bin\i386-win32"
+        # Загрузка FPC с официального сайта
+        Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/freepascal/Win32/3.2.2/fpc-3.2.2.i386-win32.exe" -OutFile fpc-installer.exe
+        Start-Process fpc-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\FPC" -Wait
 
-    - name: Set up Lazarus
+    - name: Download and Install Lazarus
       run: |
-        # Установка Lazarus через Chocolatey
-        choco install -y lazarus --install-args="'/D=C:\Lazarus'"
+        # Загрузка Lazarus с официального сайта
+        Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2032%20bits/Lazarus%202.0.12/lazarus-2.0.12-fpc-3.2.0-win32.exe" -OutFile lazarus-installer.exe
+        Start-Process lazarus-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\Lazarus" -Wait
+
+    - name: Set up environment
+      run: |
+        # Добавляем FPC и Lazarus в PATH
+        $env:PATH += ";C:\FPC\bin\i386-win32"
+        $env:PATH += ";C:\Lazarus"
 
     - name: Verify FPC installation
       run: |
-        # Проверяем, что FPC установлен правильно
-        if (!(Test-Path "C:\Lazarus\fpc\bin\i386-win32\fpc.exe")) {
+        # Проверка установки FPC
+        if (!(Test-Path "C:\FPC\bin\i386-win32\fpc.exe")) {
           throw "FPC not installed correctly!"
+        }
+
+    - name: Verify Lazarus installation
+      run: |
+        # Проверка установки Lazarus
+        if (!(Test-Path "C:\Lazarus\lazbuild.exe")) {
+          throw "Lazarus not installed correctly!"
         }
 
     - name: Verify project file exists
@@ -45,5 +57,5 @@ jobs:
 
     - name: Build project
       run: |
-        # Строим проект
+        # Сборка проекта
         & "C:\Lazarus\lazbuild.exe" ipricese.lpi
