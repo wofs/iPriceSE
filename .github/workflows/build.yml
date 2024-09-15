@@ -18,13 +18,27 @@ jobs:
 
     - name: Set up Free Pascal Compiler and Lazarus
       run: |
-        # Установка FPC и Lazarus через Chocolatey
+        # Установка FPC и Lazarus с указанием путей
         choco install -y fpc --install-args="'/D=C:\Lazarus\fpc'"
         choco install -y lazarus --install-args="'/D=C:\Lazarus'"
-    
-    - name: Build project
+
+    - name: Verify FPC installation
       run: |
-        # Устанавливаем правильные пути через переменную PATH и используем оператор & для PowerShell
+        # Проверяем, что FPC установлен правильно
+        if (!(Test-Path "C:\Lazarus\fpc\3.2.0\bin\i386-win32\fpc.exe")) {
+          throw "FPC not installed correctly!"
+        }
         $env:PATH += ";C:\Lazarus\fpc\3.2.0\bin\i386-win32"
         $env:PATH += ";C:\Lazarus"
+
+    - name: Verify project file exists
+      run: |
+        # Проверяем, что файл проекта существует
+        if (!(Test-Path "./ipricese.lpi")) {
+          throw "Project file not found: ipricese.lpi"
+        }
+
+    - name: Build project
+      run: |
+        # Строим проект
         & "C:\Lazarus\lazbuild.exe" ipricese.lpi
