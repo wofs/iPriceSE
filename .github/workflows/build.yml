@@ -16,17 +16,34 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Download and Install Free Pascal Compiler (FPC)
+    - name: Download Free Pascal Compiler (FPC)
       run: |
         # Загрузка FPC с официального сайта
         Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/freepascal/Win32/3.2.2/fpc-3.2.2.i386-win32.exe" -OutFile fpc-installer.exe
-        Start-Process fpc-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\FPC" -Wait
+        # Проверка размера загруженного файла
+        if ((Get-Item fpc-installer.exe).length -lt 10000000) {
+          throw "File might be corrupted or incomplete."
+        }
+
+    - name: Install Free Pascal Compiler (FPC)
+      run: |
+        # Создаём временный каталог для установки
+        New-Item -Path C:\Temp -ItemType Directory -Force
+        # Устанавливаем FPC
+        Start-Process -FilePath fpc-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\FPC" -WorkingDirectory C:\Temp -Wait
 
     - name: Download and Install Lazarus
       run: |
         # Загрузка Lazarus с официального сайта
         Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2032%20bits/Lazarus%202.0.12/lazarus-2.0.12-fpc-3.2.0-win32.exe" -OutFile lazarus-installer.exe
-        Start-Process lazarus-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\Lazarus" -Wait
+        # Проверка размера загруженного файла
+        if ((Get-Item lazarus-installer.exe).length -lt 10000000) {
+          throw "File might be corrupted or incomplete."
+        }
+        # Создаём временный каталог для установки
+        New-Item -Path C:\Temp -ItemType Directory -Force
+        # Устанавливаем Lazarus
+        Start-Process -FilePath lazarus-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\Lazarus" -WorkingDirectory C:\Temp -Wait
 
     - name: Set up environment
       run: |
