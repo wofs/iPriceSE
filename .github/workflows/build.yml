@@ -1,0 +1,61 @@
+name: Build Lazarus Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download and Install Free Pascal Compiler (FPC)
+      run: |
+        # Загрузка FPC с официального сайта
+        Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/freepascal/Win32/3.2.2/fpc-3.2.2.i386-win32.exe" -OutFile fpc-installer.exe
+        Start-Process fpc-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\FPC" -Wait
+
+    - name: Download and Install Lazarus
+      run: |
+        # Загрузка Lazarus с официального сайта
+        Invoke-WebRequest -Uri "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2032%20bits/Lazarus%202.0.12/lazarus-2.0.12-fpc-3.2.0-win32.exe" -OutFile lazarus-installer.exe
+        Start-Process lazarus-installer.exe -ArgumentList "/VERYSILENT", "/DIR=C:\Lazarus" -Wait
+
+    - name: Set up environment
+      run: |
+        # Добавляем FPC и Lazarus в PATH
+        $env:PATH += ";C:\FPC\bin\i386-win32"
+        $env:PATH += ";C:\Lazarus"
+
+    - name: Verify FPC installation
+      run: |
+        # Проверка установки FPC
+        if (!(Test-Path "C:\FPC\bin\i386-win32\fpc.exe")) {
+          throw "FPC not installed correctly!"
+        }
+
+    - name: Verify Lazarus installation
+      run: |
+        # Проверка установки Lazarus
+        if (!(Test-Path "C:\Lazarus\lazbuild.exe")) {
+          throw "Lazarus not installed correctly!"
+        }
+
+    - name: Verify project file exists
+      run: |
+        # Проверяем, что файл проекта существует
+        if (!(Test-Path "./ipricese.lpi")) {
+          throw "Project file not found: ipricese.lpi"
+        }
+
+    - name: Build project
+      run: |
+        # Сборка проекта
+        & "C:\Lazarus\lazbuild.exe" ipricese.lpi
