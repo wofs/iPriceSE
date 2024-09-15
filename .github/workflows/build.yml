@@ -18,9 +18,11 @@ jobs:
 
     - name: Set up Free Pascal Compiler and Lazarus
       run: |
-        # Установка FPC и Lazarus с указанием путей
+        # Установка FPC и Lazarus с выводом логов для диагностики
         choco install -y fpc --install-args="'/D=C:\Lazarus\fpc'"
         choco install -y lazarus --install-args="'/D=C:\Lazarus'"
+        # Выводим список файлов в C:\Lazarus\fpc для проверки установки
+        Get-ChildItem -Recurse C:\Lazarus\fpc
 
     - name: Verify FPC installation
       run: |
